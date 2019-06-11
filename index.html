@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2048</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        SCORE:<span id="score_01">0</span>
+    </div>
+
+    <!-- 4*4 -->
+    <div class="cell_all">
+        <!-- 第一行 -->
+        <div class="cell" id="c00"></div>
+        <div class="cell" id="c01"></div>
+        <div class="cell" id="c02"></div>
+        <div class="cell" id="c03"></div>
+        <!-- 第二行 -->
+        <div class="cell" id="c10"></div>
+        <div class="cell" id="c11"></div>
+        <div class="cell" id="c12"></div>
+        <div class="cell" id="c13"></div>
+        <!-- 第三行 -->
+        <div class="cell" id="c20"></div>
+        <div class="cell" id="c21"></div>
+        <div class="cell" id="c22"></div>
+        <div class="cell" id="c23"></div>
+        <!-- 第四行 -->
+        <div class="cell" id="c30"></div>
+        <div class="cell" id="c31"></div>
+        <div class="cell" id="c32"></div>
+        <div class="cell" id="c33"></div>
+        <!--[
+                [00,01,02,03],
+                [10,11,12,13],
+                [20,21,22,23],
+                [30,31,32,33]
+        ]-->
+    </div>
+
+    <!-- gameover -->
+    <div class="gameover" id="gameover">
+        <p class="gameover_p">
+            GAMEOVER！<br>
+            SCORE:<span id="score_02">0</span><br>
+            <a href="javascript:game.start()">TRY AGAIN!</a>
+        </p>
+    </div>
+
+    <script src="js/realize.js"></script>
+</body>
+</html>
